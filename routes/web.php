@@ -24,8 +24,10 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+Route::get('/about', [PageController::class, 'showAbout']);
 
 // web.php
 Route::get('/contact', [PageController::class, 'showContact']);
 
 require __DIR__.'/auth.php';
+
