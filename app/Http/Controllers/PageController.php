@@ -10,7 +10,7 @@ class PageController extends Controller
     public function showAbout()
     {
         return view('about');
-
+    }
     // PageController.php
     public function showContact()
     {
